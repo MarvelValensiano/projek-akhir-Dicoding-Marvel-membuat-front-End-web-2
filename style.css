@@ -16,21 +16,32 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
+header {
     margin: auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
+    position: relative;
     text-align: center;
-    color: #ffffff;
-    background-color: #000000;
-    padding: 20px;
-    margin: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 3rem; /* Sesuaikan ukuran font */
+    background: linear-gradient(to right, #f8ff72, #ffae68, #ff4848, #ffae68, #f8ff72);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
 }
 
 
